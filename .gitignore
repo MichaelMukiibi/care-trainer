@@ -1,0 +1,203 @@
+# ============================================================
+# CARE Trainer — Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# ------------------------------------------------------------
+# Environment & secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+
+# Cloud / API credentials
+.aws/
+.gcp/
+.azure/
+
+# ------------------------------------------------------------
+# Jupyter
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+
+# Jupyter temporary files
+*.ipynb_checkpoints
+
+# ------------------------------------------------------------
+# Data
+# ------------------------------------------------------------
+# Raw and processed datasets should NOT normally live in Git.
+data/raw/*
+data/interim/*
+data/processed/*
+data/evaluation/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/evaluation/.gitkeep
+
+# Common dataset formats
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.arrow
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.db
+
+# Compressed datasets
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# ------------------------------------------------------------
+# Machine Learning / Model Artifacts
+# ------------------------------------------------------------
+# Checkpoints
+checkpoints/
+outputs/
+runs/
+artifacts/
+models/
+weights/
+
+# PyTorch
+*.pt
+*.pth
+*.bin
+
+# SafeTensors
+*.safetensors
+
+# TensorFlow / Keras
+*.h5
+*.keras
+saved_model/
+
+# Hugging Face caches / downloads
+.huggingface/
+.cache/huggingface/
+huggingface_cache/
+
+# Transformers / datasets caches
+.cache/
+.cache/
+
+# ------------------------------------------------------------
+# Experiment Tracking
+# ------------------------------------------------------------
+wandb/
+.wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+logs/
+
+# ------------------------------------------------------------
+# Generated Reports / Figures
+# ------------------------------------------------------------
+reports/experiments/*
+reports/figures/*
+
+!reports/experiments/.gitkeep
+!reports/figures/.gitkeep
+
+# Generated plots
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# ------------------------------------------------------------
+# Temporary / scratch files
+# ------------------------------------------------------------
+tmp/
+temp/
+scratch/
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# OS files
+# ------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------
+# IDEs / Editors
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# ------------------------------------------------------------
+# Ruff / mypy / pytest
+# ------------------------------------------------------------
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ------------------------------------------------------------
+# UV / Poetry / Hatch
+# ------------------------------------------------------------
+.python-version
+.uv/
+
+# ------------------------------------------------------------
+# Local experiment configuration
+# ------------------------------------------------------------
+config.local.*
+configs/local/
+configs/private/
+
+# ------------------------------------------------------------
+# OS / shell history
+# ------------------------------------------------------------
+.python_history
+.ipython/
